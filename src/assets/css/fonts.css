@@ -1,0 +1,20 @@
+/* TEXT REGULAR */
+@font-face {
+  font-family: 'YS Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+/* TEXT MEDIUM */
+@font-face {
+  font-family: 'YS Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff') format('woff');
+  font-weight: 500;
+}
+
+/* TEXT BLACK */
+@font-face {
+  font-family: 'YS Text';
+  src: url('https://yastatic.net/s3/home/fonts/ys/4/text-black.woff') format('woff');
+  font-weight: 900;
+}

@@ -1,0 +1,13 @@
+:root {
+  /* BASE COLORS */
+  --color-dark: #21201F;
+  --color-yellow: #FFDE40;
+  --color-yellow-bright: #ffefa1;
+  --color-yellow-semitransparent: rgba(255, 222, 64, 0.59);
+  --color-silver-gray: #DEDEDE;
+
+  /* COLOR USAGE */
+  --color-main-text: var(--color-dark);
+  --color-main-accent: var(--color-yellow);
+  --color-content-background: var(--color-silver-gray);
+}

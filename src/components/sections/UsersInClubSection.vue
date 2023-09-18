@@ -14,6 +14,14 @@ export default {
 <template>
   <section id="users-in-club">
     <div class="content">
+      <div class="image-wrapper">
+        <div class="text-around-image">
+          <img class="smkt" src="@/assets/img/smkt3.png" alt="">
+          <circular-text :size="450">
+            собщество любителей самокатов
+          </circular-text>
+        </div>
+      </div>
       <div class="text-wrapper">
         <h3>
           80% наших пользователей уже в клубе и экономят на поездках
@@ -23,12 +31,6 @@ export default {
         </p>
         <y-button>Хочу абонемент</y-button>
       </div>
-      <div class="image-wrapper">
-        <circular-text :width="450" :height="450">
-          собщество любителей самокатов
-        </circular-text>
-        <img class="smkt" src="@/assets/img/smkt3.png" alt="">
-      </div>
     </div>
   </section>
 </template>
@@ -36,7 +38,7 @@ export default {
 <style scoped>
 .content {
   display: grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: auto max-content;
 }
 .text-wrapper {
   max-width: 390px;
@@ -45,9 +47,15 @@ export default {
 .text-wrapper > * {
   margin-bottom: 48px;
 } .text-wrapper > *:last-child {margin-bottom: 0;}
-
+/* 
 .image-wrapper {
   position: relative;
+} */
+
+.text-around-image {
+  position: relative;
+  width: 450px;
+  height: 450px;
 }
 
 img, svg {
@@ -61,5 +69,16 @@ img, svg {
 svg {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 916px) {
+  .content {
+    display: block;
+  }
+
+  .text-around-image {
+    width: 311px;
+    height: 311px;
+  }
 }
 </style>

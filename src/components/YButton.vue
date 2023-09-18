@@ -1,4 +1,7 @@
 <script>
+export default {
+  name: 'y-button'
+}
 </script>
 
 <template>
@@ -14,6 +17,7 @@ button {
   line-height: 16px;
 
   font-weight: 500;
+  text-align: center;
   border: none;
   border-radius: 36px;
   background-color: var(--color-main-accent);

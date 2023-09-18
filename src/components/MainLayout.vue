@@ -101,6 +101,7 @@ img {
 
 .content {
   position: relative;
+  box-sizing: border-box;
   z-index: 1;
   max-width: 916px;
   padding-top: 128px;

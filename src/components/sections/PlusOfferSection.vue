@@ -17,8 +17,10 @@ export default {
         </p>
       </div>
       <div class="image-wrapper">
-        <img class="smkt" src="@/assets/img/smkt2.png" alt="">
-        <img class="ya-plus" src="@/assets/img/ya_plus.png" alt="">
+        <div class="image-block">
+          <img class="smkt" src="@/assets/img/smkt2.png" alt="">
+          <img class="ya-plus" src="@/assets/img/ya_plus.png" alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -34,7 +36,7 @@ export default {
   max-width: 390px;
 }
 
-.image-wrapper {
+.image-block {
   position: relative;
 }
 
@@ -62,5 +64,17 @@ img.ya-plus {
   margin-left: 17%;
 
   transform: rotate(6.06deg);
+}
+
+@media screen and (max-width: 916px) {
+  .content {
+    display: block;
+  }
+
+  .image-block {
+    display: none;
+    width: 311px;
+    height: 311px;
+  }
 }
 </style>

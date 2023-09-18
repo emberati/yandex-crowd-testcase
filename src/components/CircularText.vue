@@ -2,11 +2,7 @@
 export default {
   name: 'circular-text',
   props: {
-    width: {
-      type: Number,
-      required: true
-    },
-    height: {
+    size: {
       type: Number,
       required: true
     }
@@ -15,14 +11,14 @@ export default {
 </script>
 <template>
   <svg
-  :width="`${width}px`"
-  :height="`${height}px`"
+  :width="`${size}px`"
+  :height="`${size}px`"
   viewBox="0 0 100 100"
   xmlns="http://www.w3.org/2000/svg"
   >
   <path
     id="circular-text-path"
-    d="M85 50C85 69.33 69.33 85 50 85C30.67 85 15 69.33 15 50C15 30.67 30.67 15 50 15C69.33 15 85 30.67 85 50Z"
+    d="M90 50C90 72.0914 72.0914 90 50 90C27.9086 90 10 72.0914 10 50C10 27.9086 27.9086 10 50 10C72.0914 10 90 27.9086 90 50Z"
     fill="none"/>
     <text class="circular-text">
       <textPath
@@ -44,8 +40,8 @@ text.circular-text {
 textPath {
   font-family: 'YS Text';
   font-weight: 900;
-  font-size: 11.7px;
-  word-spacing: 0.25ch;
+  font-size: 13.3px;
+  word-spacing: 0.3ch;
   fill: var(--color-main-text);
 }
 </style>

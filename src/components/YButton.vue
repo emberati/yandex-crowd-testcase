@@ -10,6 +10,9 @@ button {
   box-sizing: border-box;
   padding: 24px 48px 24px 48px;
 
+  height: 65px;
+  line-height: 16px;
+
   font-weight: 500;
   border: none;
   border-radius: 36px;

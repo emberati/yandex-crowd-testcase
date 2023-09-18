@@ -10,7 +10,7 @@ export default {
 <template>
   <section id="plus-offer">
     <div class="content">
-      <div class="wrapper">
+      <div class="text-wrapper">
         <h3>Купить абонемент и вступить в клуб смогут те, кто в Плюсе</h3>
         <p>
           За каждую поездку на самокатах такие пользователи получают кешбэк баллами. Баллы можно тратить на поездки на самокатах и такси с Яндекс Go, покупки и заказы в других сервисах Яндекса
@@ -29,7 +29,8 @@ export default {
   display: grid;
   grid-template-columns: max-content auto;
 }
-.wrapper {
+
+.text-wrapper {
   max-width: 390px;
 }
 

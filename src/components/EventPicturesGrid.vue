@@ -79,11 +79,11 @@ export default {
 }
 
 .image-wrapper:nth-child(2n - 1) {
-  animation: shifting1 15s ease-in-out infinite;
+  animation: shifting1 10s ease-in-out infinite;
 }
 
 .image-wrapper:nth-child(2n) {
-  animation: shifting2 15s ease-in-out infinite;
+  animation: shifting2 10s ease-in-out infinite;
 }
 
 @keyframes shifting1 {

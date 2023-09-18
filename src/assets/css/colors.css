@@ -10,4 +10,5 @@
   --color-main-text: var(--color-dark);
   --color-main-accent: var(--color-yellow);
   --color-content-background: var(--color-silver-gray);
+  --color-selection: var(--color-yellow-semitransparent);
 }

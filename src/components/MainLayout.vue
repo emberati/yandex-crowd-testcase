@@ -50,6 +50,7 @@ export default {
 @import '@/assets/css/reset.css';
 @import '@/assets/css/fonts.css';
 @import '@/assets/css/colors.css';
+@import '@/assets/css/variables.css';
 
 a, p, span, li, button, input {
   font-family: 'YS Text', sans-serif;
@@ -59,6 +60,8 @@ a, p, span, li, button, input {
   font-size: 24px;
   /* letter-spacing: -0.96px; */
   line-height: 120%;
+
+  text-align: left;
 }
 
 h1, h2, h3 {
@@ -68,6 +71,8 @@ h1, h2, h3 {
 
   font-weight: 900;
   line-height: 100%;
+
+  text-align: left;
 }
 
 h1 {

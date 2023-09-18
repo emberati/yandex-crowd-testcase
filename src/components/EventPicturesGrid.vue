@@ -10,6 +10,11 @@ export default {
       eventPic2Url: require('@/assets/img/events/event_pic_2.png'),
       eventPic3Url: require('@/assets/img/events/event_pic_3.png'),
       eventPic4Url: require('@/assets/img/events/event_pic_4.png'),
+    },
+    icons: {
+      bubblesIconUrl: require('@/assets/img/icons/bubbles_icon.png'),
+      coffeIconUrl: require('@/assets/img/icons/coffe_icon.png'),
+      locatoinIconUrl: require('@/assets/img/icons/location_icon.png')
     }
   })
 }
@@ -23,27 +28,36 @@ export default {
       class="event-pic"
       alt=""
     >
+    <img
+      class="location-icon"
+      :src="icons.locatoinIconUrl"
+      alt="">
   </div>
   <div class="image-wrapper">
     <img
       :src="images.eventPic2Url"
       class="event-pic"
-      alt=""
-    >  
-  </div>
-  <div class="image-wrapper">
+      alt="">
     <img
-      :src="images.eventPic3Url"
-      class="event-pic"
-      alt=""
-    >    
+      class="bubbles-icon"
+      :src="icons.bubblesIconUrl"
+      alt="">
   </div>
   <div class="image-wrapper">
     <img
       :src="images.eventPic4Url"
       class="event-pic"
-      alt=""
-    >
+      alt="">
+  </div>
+  <div class="image-wrapper">
+    <img
+      :src="images.eventPic3Url"
+      class="event-pic"
+      alt="">
+    <img
+      class="coffe-icon"
+      :src="icons.coffeIconUrl"
+      alt="">
   </div>
 </div>
 </template>
@@ -53,6 +67,15 @@ export default {
   display: grid;
   grid-template-columns: auto auto;
   gap: 24px;
+}
+
+.image-wrapper {
+  position: relative;
+  /* overflow: hidden; */
+  width: 455px;
+  height: 455px;
+  background-color: var(--color-content-background);
+  border-radius: 64px;
 }
 
 .image-wrapper:nth-child(2n - 1) {
@@ -91,18 +114,31 @@ export default {
   }
 }
 
-.image-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 455px;
-  height: 455px;
-  background-color: var(--color-content-background);
-  border-radius: 64px;
-}
-
 img.event-pic {
   width: 455px;
   height: 455px;
+  border-radius: 65px;
+}
+
+img[class$=icon] {
+  position: absolute;
+}
+
+.location-icon {
+  left: -60%;
+  top: -20%;
+  transform: rotate(-15deg);
+}
+
+.bubbles-icon {
+  right: -33%;
+  top: -45%;
+  transform: rotate(135.26deg);
+}
+
+.coffe-icon {
+  right: -50%;
+  bottom: -80%;
 }
 
 .image-wrapper:nth-child(2n) {

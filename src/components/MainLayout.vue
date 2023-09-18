@@ -3,6 +3,7 @@ import YButton from '@/components/YButton'
 import JoinClubSection from '@/components/sections/JoinClubSection';
 import PromotionSection from '@/components/sections/PromotionSection';
 import ExclusiveEventsSection from '@/components/sections/ExclusiveEventsSection';
+import PlusOfferSection from '@/components/sections/PlusOfferSection';
 
 export default {
   name: 'main-layout',
@@ -10,7 +11,8 @@ export default {
     YButton,
     JoinClubSection,
     PromotionSection,
-    ExclusiveEventsSection
+    ExclusiveEventsSection,
+    PlusOfferSection
   }
 }
 </script>
@@ -19,6 +21,7 @@ export default {
   <join-club-section />
   <promotion-section />
   <exclusive-events-section />
+  <plus-offer-section />
   <y-button id="floating-join-club-button">Стать частью клуба</y-button>
 </template>
 
@@ -56,6 +59,11 @@ h2 {
 
 h3 {
   font-size: 48px;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .content {
